@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:51:36 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/12 00:37:02 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/12 08:12:13 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,19 @@
 
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {
-    
+   char *s1;
+   char *s2;
+
+   s1 = dest;
+   while (n > 0)
+   {
+      s1 = s2;
+      s1++;
+      s2++;
+      n--;
+   }
+   return (s1);
+   
 }
 
 #include <stdio.h>
@@ -22,8 +34,9 @@ void    *ft_memcpy(void *dest, const void *src, size_t n)
 
 int main (void) {
    const char src[60] = "copies n characters from memory area src to memory area dest";
-   char dest[50] = "Do you know the way?";
+   char dest[50];
 
+   strcpy("Do you know the way?", dest);
    printf("Before ft_memcpy() dest = %s\n", dest);
 
    ft_memcpy(dest, src, ft_strlen(src)+1);
