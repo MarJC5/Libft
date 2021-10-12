@@ -6,24 +6,23 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:25:35 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/11 23:48:16 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/12 10:33:26 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *buf, size_t n)
+void	ft_bzero(void *buf, size_t n)
 {
-    char   *str;
+	char	*str;
 
-    if (!n)
-        return ;
-
-    str = buf;
-    while (n > 0)
-    {
-        *str = 0;
-        str++;
-        n--;
-    }
+	if (!n)
+		return ;
+	str = buf;
+	while (n > 0)
+	{
+		*str = 0;
+		str++;
+		n--;
+	}
 }
