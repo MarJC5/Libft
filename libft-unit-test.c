@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/13 08:10:59 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/13 11:45:49 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,62 @@ int main(void)
     printf("\nAfter ft_memset(): \n%s\n", str);
     printf("After memset():  \n%s\n", str);
     return 0;
+} */
+
+void *ft_memcpy(void *dest, const void *src, size_t n);
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main (void) {
+	const char src[12] = "42Lausanne";
+	char dest[12];
+	strcpy(dest,"Helloooo!!!");
+
+	printf("\nft_memcpy()\n");
+	printf("Before ft_memcpy() dest = %s\n", dest);
+	ft_memcpy(dest, src, ft_strlen(src)+1);
+	printf("After ft_memcpy() dest = %s\n", dest);
+
+	printf("\n\n=======================\n\n");
+
+	strcpy(dest,"Helloooo!!");
+
+	printf("\nmemcpy()\n");
+	printf("Before memcpy() dest = %s\n", dest);
+	memcpy(dest, src, ft_strlen(src)+1);
+	printf("After memcpy() dest = %s\n\n", dest);
+
+	return(0);
+} */
+
+void	*ft_memmove(void *dst, const void *src, size_t n);
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+	char dest[] = "oldstring";
+	const char src[] = "newstringnewstring";
+
+	char dest2[] = "oldstring";
+	const char src2[] = "newstringnewstring";
+
+	printf("\nft_memmove()\n");
+	printf("Before memmove dest = %s, src = %s\n", dest, src);
+	ft_memmove(dest, src, 9);
+	printf("After memmove dest = %s, src = %s\n", dest, src);
+
+	printf("\n\n=======================\n\n");
+
+	printf("\nmemmove()\n");
+	printf("Before memmove dest = %s, src = %s\n", dest2, src2);
+	memmove(dest2, src, 9);
+	printf("After memmove dest = %s, src = %s\n\n", dest2, src2);
+
+	return(0);
 } */
 
 void    ft_bzero(void *buf, size_t n);
@@ -79,6 +135,44 @@ int main (void) {
 	printf("\n============================\n\n");
 	printf("strchr():\n");
 	printf("String after |%c| is - |%s|\n", ch, strchr(str, ch));
+	return(0);
+} */
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main (void) {
+	char str1[15];
+	char str2[15];
+	int ret;
+
+	strcpy(str1, "abclef");
+	strcpy(str2, "abcDef");
+
+	ret = ft_strncmp(str1, str2, 3);
+
+	printf("\nft_strncmp():\n");
+	if(ret < 0) {
+		printf("str1 is less than str2 -> %d", ret);
+	} else if(ret > 0) {
+		printf("str2 is less than str1 -> %d", ret);
+	} else {
+		printf("str1 is equal to str2 -> %d", ret);
+	}
+
+	printf("\n\n=======================\n\n");
+
+	ret = strncmp(str1, str2, 3);
+	printf("\nstrncmp():\n");
+	if(ret < 0) {
+		printf("str1 is less than str2 -> %d", ret);
+	} else if(ret > 0) {
+		printf("str2 is less than str1 -> %d", ret);
+	} else {
+		printf("str1 is equal to str2 -> %d", ret);
+	}
 	return(0);
 } */
 

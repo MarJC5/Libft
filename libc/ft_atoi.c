@@ -6,11 +6,11 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 09:54:02 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/12 11:39:20 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/13 13:17:09 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
