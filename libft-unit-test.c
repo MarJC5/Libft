@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/12 11:40:03 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/13 08:10:59 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,24 @@ int main(void)
     return 0;
 } */
 
-int	ft_atoi(const char *str)
+char	*ft_strchr(const char *str, int c);
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main (void) {
+	const char str[] = "Do you know the way?";
+	const char ch = 't';
+
+	printf("\nft_strchr():\n");
+	printf("String after |%c| is - |%s|\n", ch, ft_strchr(str, ch));
+	printf("\n============================\n\n");
+	printf("strchr():\n");
+	printf("String after |%c| is - |%s|\n", ch, strchr(str, ch));
+	return(0);
+} */
+
+int	ft_atoi(const char *str);
 /*
 #include <stdio.h>
 #include <stdlib.h>

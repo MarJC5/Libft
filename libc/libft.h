@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 21:30:49 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/12 11:40:32 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/13 08:00:24 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int		ft_atoi(const char *str);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memset(void *buf, int c, size_t n);
 void	ft_bzero(void *buf, size_t n);
+
+char	*ft_strchr(const char *str, int c);
 
 size_t	ft_strlen(const char *str);
 

@@ -6,13 +6,14 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/12 23:53:42 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/13 08:12:54 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME 		= 	libft.a
-CFLAGS		= 	-Wall -Werror -Wextra -I. -c
-CC			= 	gcc
+CFLAGS		= 	-Wall -Werror -Wextra
+CC			= 	cc
+RM			=	rm -f
 FILES		= 	ft_atoi.c \
 				ft_bzero.c \
 				ft_isalnum.c \
@@ -25,18 +26,18 @@ FILES		= 	ft_atoi.c \
 				ft_strlen.c \
 				ft_tolower.c \
 				ft_toupper.c
-OBJFILES	= $(FILES:%.c=%.o) 
-# "%.o: %.c" means that any file ending in .o depends on the same filename ending in .c to be present.
+OBJFILES	= $(FILES:%.c=%.o) # Any file ending in .o depends on the same filename ending in .c to be present.
 
-all:	$(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJFILES)
-	$(CC) $(CFLAGS) $(FILES)
+	$(CC) -o $(NAME) $(OBJFILES)
 
 clean:
-	rm -f $(OBJFILES)
+	$(RM) $(OBJFILES)
 
-fclean:
-	rm -f $(NAME)
+# Call previous rule to delete .o and clean program too
+fclean: clean
+	$(RM) $(NAME)
 
 re: fclean all
