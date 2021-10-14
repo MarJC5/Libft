@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 09:54:02 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/13 13:17:09 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/14 19:00:03 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_atoi(const char *str)
 		sign = -1;
 	if (str[count] == '-' || str[count] == '+')
 		count++;
-	while (str[count] && (str[count] >= '0' && str[count] <= '9'))
+	while (str[count] && ft_isdigit(str[count]))
 		num = num * 10 + (str[count++] - '0');
 	return (sign * num);
 }

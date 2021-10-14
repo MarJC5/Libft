@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/14 15:02:06 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/14 19:07:24 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,40 @@ int main (void) {
 	printf("\nmemchr()\n");
 	printf("String after |%c| is - |%s|\n", ch, ret);
 	return(0);
+} */
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main (void)
+{
+	char buffer1[] = "DWgaOtP12df0";
+	char buffer2[] = "DWGAOTP12DF0";
+
+	int n;
+
+	printf("\nft_memcmp():\n");
+	n = ft_memcmp ( buffer1, buffer2, sizeof(buffer1) );
+	if (n>0)
+		printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
+	else if
+		(n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
+	else
+		printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
+
+	printf("\n===========================================\n");
+
+	printf("\nmemcmp():\n");
+	n = memcmp ( buffer1, buffer2, sizeof(buffer1) );
+	if (n>0)
+		printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
+	else if
+		(n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
+	else
+		printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
+	return 0;
 } */
 
 void    *ft_memset(void *buf, int c, size_t n);
