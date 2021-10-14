@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/13 11:45:49 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/14 15:02:06 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,28 @@ int main (void) {
 
 	printf("ft_strlen() = %zu\n", ft_strlen(src));
 	printf("strlen() = %lu\n", strlen(src));
+	return(0);
+} */
+
+void	*ft_memchr(const void *str, int c, size_t n);
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main (void) {
+	const char str[] = "42 Lausanne";
+	const char ch = ' ';
+	char *ret;
+
+	ret = ft_memchr(str, ch, strlen(str));
+	printf("\nft_memchr()\n");
+	printf("String after |%c| is - |%s|\n", ch, ret);
+
+	printf("\n==================================\n");
+
+	ret = memchr(str, ch, strlen(str));
+	printf("\nmemchr()\n");
+	printf("String after |%c| is - |%s|\n", ch, ret);
 	return(0);
 } */
 
@@ -43,7 +65,7 @@ int main(void)
     return 0;
 } */
 
-void *ft_memcpy(void *dest, const void *src, size_t n);
+void *ft_memcpy(void *dst, const void *src, size_t n);
 
 /*
 #include <stdio.h>

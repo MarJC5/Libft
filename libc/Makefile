@@ -6,7 +6,7 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/14 09:27:31 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/14 15:56:00 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ NAME 		= 	libft.a
 CFLAGS		= 	-Wall -Werror -Wextra -I. -c
 CC			= 	gcc
 RM			=	rm -f
-AR			=	ar rcs # Create an archive from files
+AR			=	ar -rcs # Create an archive from files
 FILES		= 	ft_atoi.c \
 				ft_bzero.c \
 				ft_isalnum.c \
@@ -27,11 +27,16 @@ FILES		= 	ft_atoi.c \
 				ft_isascii.c \
 				ft_isdigit.c \
 				ft_isprint.c \
+				ft_memcmp.c \
 				ft_memcpy.c\
+				ft_memchr.c \
 				ft_memset.c \
 				ft_memmove.c \
+				ft_strrchr.c \
 				ft_strchr.c \
 				ft_strncmp.c \
+				ft_strlcat.c \
+				ft_strlcpy.c \
 				ft_strlen.c \
 				ft_tolower.c \
 				ft_toupper.c
@@ -43,19 +48,18 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(AR) $(NAME) $(OBJ)
-	@ranlib $(NAME)
-	@echo "All .o files & $(NAME) $(GREEN)created$(RESET)"
+	@echo "[$(GREEN)created$(RESET)]: *.o files & $(NAME)"
 
 $(OBJ): $(FILES)
 	@$(CC) $(CFLAGS) $(FILES)
 
 clean:
 	@$(RM) $(OBJ)
-	@echo "All .o files $(RED)deleted$(RESET)"
+	@echo "[$(RED)deleted$(RESET)]: *.o files"
 
 # Call previous rule to delete .o and clean program too
 fclean: clean
 	@$(RM) $(NAME)
-	@echo "Program: $(NAME) $(RED)deleted$(RESET)"
+	@echo "[$(RED)deleted$(RESET)]: $(NAME)"
 
 re: fclean all
