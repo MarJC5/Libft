@@ -6,7 +6,7 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/15 07:38:08 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/15 10:59:23 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ FILES		= 	ft_atoi.c \
 				ft_memchr.c \
 				ft_memset.c \
 				ft_memmove.c \
+				ft_strnstr.c \
 				ft_strrchr.c \
 				ft_strchr.c \
 				ft_strncmp.c \
@@ -40,6 +41,7 @@ FILES		= 	ft_atoi.c \
 				ft_strlen.c \
 				ft_tolower.c \
 				ft_toupper.c \
+				ft_strdup.c \
 				ft_calloc.c
 OBJ			= 	$(FILES:.c=.o) # Any file ending in .o depends on the same filename ending in .c to be present.
 
