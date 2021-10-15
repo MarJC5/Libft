@@ -6,7 +6,7 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/15 10:59:23 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/15 16:03:55 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,9 @@ FILES		= 	ft_atoi.c \
 				ft_tolower.c \
 				ft_toupper.c \
 				ft_strdup.c \
-				ft_calloc.c
+				ft_calloc.c \
+				ft_putchar_fd.c \
+				ft_putstr_fd.c
 OBJ			= 	$(FILES:.c=.o) # Any file ending in .o depends on the same filename ending in .c to be present.
 
 .PHONY : all clean fclean re

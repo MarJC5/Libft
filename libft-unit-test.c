@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/14 19:07:24 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/15 16:34:19 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -263,4 +263,16 @@ int main () {
    printf("atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
 
    return(0);
+} */
+
+
+void	ft_putstr_fd(char *str, int fd);
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	ft_putstr_fd("This is c programming.", 1);
+	ft_putstr_fd("This is a system programming language.", 1);
+	return(0);
 } */
