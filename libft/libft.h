@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 21:30:49 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/14 22:03:36 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/15 07:21:27 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int		ft_atoi(const char *str);
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
+void	*ft_calloc(size_t ecount, size_t esize);
 
 void	*ft_memchr(const void *str, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
