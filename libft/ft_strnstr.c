@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 11:00:29 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/15 15:38:07 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/18 16:33:58 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,12 @@
 char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
 	size_t	i;
+	size_t	j;
+	(void) n;
 
-	i = -1;
+	i = 0;
+	j = 0;
 	if (!little)
 		return ((char *)big);
-	while (++i < n)
-		return (NULL);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/15 16:34:19 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/18 16:24:55 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -232,6 +232,20 @@ int main (void) {
 	return(0);
 } */
 
+char	*ft_itoa(int n);
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+
+	printf("%s\n", ft_itoa(0));
+	printf("%s\n", ft_itoa(-125));
+	printf("%s\n", ft_itoa(58125));
+	printf("%s\n", ft_itoa(-2147483648));
+	return (0);
+} */
+
 int	ft_atoi(const char *str);
 /*
 #include <stdio.h>
@@ -265,6 +279,22 @@ int main () {
    return(0);
 } */
 
+char	*ft_substr(const char *str, unsigned int start, size_t len);
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char *p;
+	char string[37] = "the position and length of substring";
+
+	p = ft_substr(string, 12, 6);
+	printf("%s\n", p);
+	free(p);
+
+	return 0;
+} */
 
 void	ft_putstr_fd(char *str, int fd);
 /*

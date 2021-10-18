@@ -6,7 +6,7 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/16 12:01:38 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/18 12:10:24 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ FILES		= 	ft_atoi.c \
 				ft_toupper.c \
 				ft_strdup.c \
 				ft_calloc.c \
+				ft_substr.c \
 				ft_itoa.c \
 				ft_putchar_fd.c \
 				ft_putstr_fd.c \
