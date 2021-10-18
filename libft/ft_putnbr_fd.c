@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/15 15:50:10 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/16 13:44:57 by jmartin          ###   ########.fr       */
+/*   Created: 2021/10/16 11:53:46 by jmartin           #+#    #+#             */
+/*   Updated: 2021/10/16 11:59:56 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	write(fd, &c, 1);
+	n = 0;
+	fd = 0;
+	//ft_putstr_fd(n, fd);
 }
