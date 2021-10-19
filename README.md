@@ -27,12 +27,12 @@
 | [ft_strncmp](https://github.com/MarJC5/Libft/blob/main/libft/ft_strncmp.c) | ```int  ft_strncmp(const  char  *s1, const  char  *s2, size_t  n);``` | Compares the two strings ```s1``` and ```s2``` and returns an integer less than, equal to, or greater than zero if ```s1``` is found |
 | [ft_memchr](https://github.com/MarJC5/Libft/blob/main/libft/ft_memchr.c) | ```void  *ft_memchr(const  void  *str, int  c, size_t  n);``` | Locates the first occurrence of the character ```c``` (converted to an unsigned char) in string ```str``` and return the string from it |
 | [ft_memcmp](https://github.com/MarJC5/Libft/blob/main/libft/ft_memcmp.c) | ```int  ft_memcmp(const  void  *s1, const  void  *s2, size_t  n);``` | Compares the data in the ```n``` bytes form string ```s1``` against byte string ```s2```, the function does not stop comparing after finding a null character |
-| [ft_strnstr](https://github.com/MarJC5/Libft/blob/main/libft/ft_strnstr.c) | ```char  *ft_strnstr(const  char  *big, const  char  *little, size_t  n);``` |  |
+| [ft_strnstr](https://github.com/MarJC5/Libft/blob/main/libft/ft_strnstr.c) | ```char  *ft_strnstr(const  char  *big, const  char  *little, size_t  len);``` |  |
 | [ft_atoi](https://github.com/MarJC5/Libft/blob/main/libft/ft_atoi.c) | ```int  ft_atoi(const  char  *str);``` | Converts the string pointed to by ```str``` to ```int``` |
 | [ft_calloc](https://github.com/MarJC5/Libft/blob/main/libft/ft_calloc.c) | ```void  *ft_calloc(size_t  ecount, size_t  esize);``` | Allocates a block of memory for an array of num elements, each of them size bytes long, and initializes all its bits to zero |
 | [ft_strdup](https://github.com/MarJC5/Libft/blob/main/libft/ft_strdup.c) | ```char  *ft_strdup(const  char  *str);``` | Duplicate a string a dynamic memory using malloc |
 | [ft_substr](https://github.com/MarJC5/Libft/blob/main/libft/ft_substr.c) |  |  |
-| [ft_strjoin](https://github.com/MarJC5/Libft/blob/main/libft/ft_strjoin.c) |  |  |
+| [ft_strjoin](https://github.com/MarJC5/Libft/blob/main/libft/ft_strjoin.c) | ```char	*ft_substr(char const *str, unsigned int start, size_t len);``` |  |
 | [ft_strtrim](https://github.com/MarJC5/Libft/blob/main/libft/ft_strtrim.c) |  |  |
 | [ft_split](https://github.com/MarJC5/Libft/blob/main/libft/ft_split.c) |  |  |
 | [ft_itoa](https://github.com/MarJC5/Libft/blob/main/libft/ft_itoa.c) | ```char  *ft_itoa(int  n);``` | Converts the ```int``` to a string ```char *``` |
