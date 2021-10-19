@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 11:53:46 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/18 11:51:02 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/19 11:06:12 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int min = -2147483648;
-
-	if (n == min)
+	if (n == -2147483648)
 	{
 		ft_putstr_fd("-2147483648", fd);
 		return ;

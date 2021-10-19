@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 21:30:49 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/18 14:02:14 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/19 11:05:14 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
-void    ft_putnbr_fd(int n, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 void	*ft_calloc(size_t ecount, size_t esize);
 
@@ -45,7 +45,7 @@ void	*ft_memset(void *buf, int c, size_t n);
 
 void	ft_bzero(void *buf, size_t n);
 
-char    *ft_itoa(int n);
+char	*ft_itoa(int n);
 
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t n);
