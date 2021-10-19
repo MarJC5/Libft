@@ -25,8 +25,8 @@
 | [ft_memcmp](https://github.com/MarJC5/Libft/blob/main/libft/ft_memcmp.c) | ```int  ft_memcmp(const  void  *s1, const  void  *s2, size_t  n);``` | Compares the data in the ```n``` bytes form string ```s1``` against byte string ```s2```, the function does not stop comparing after finding a null character |
 | [ft_strnstr](https://github.com/MarJC5/Libft/blob/main/libft/ft_strnstr.c) | ```char  *ft_strnstr(const  char  *big, const  char  *little, size_t  n);``` |  |
 | [ft_atoi](https://github.com/MarJC5/Libft/blob/main/libft/ft_atoi.c) | ```int  ft_atoi(const  char  *str);``` | Converts the string pointed to by ```str``` to ```int``` |
-| [ft_calloc](https://github.com/MarJC5/Libft/blob/main/libft/ft_calloc.c) | ```void  *ft_calloc(size_t  ecount, size_t  esize);``` |  |
-| [ft_strdup](https://github.com/MarJC5/Libft/blob/main/libft/ft_strdup.c) | ```char  *ft_strdup(const  char  *str);``` |  |
+| [ft_calloc](https://github.com/MarJC5/Libft/blob/main/libft/ft_calloc.c) | ```void  *ft_calloc(size_t  ecount, size_t  esize);``` | Allocates a block of memory for an array of num elements, each of them size bytes long, and initializes all its bits to zero |
+| [ft_strdup](https://github.com/MarJC5/Libft/blob/main/libft/ft_strdup.c) | ```char  *ft_strdup(const  char  *str);``` | Duplicate a string a dynamic memory using malloc |
 | [ft_substr](https://github.com/MarJC5/Libft/blob/main/libft/ft_substr.c) |  |  |
 | [ft_strjoin](https://github.com/MarJC5/Libft/blob/main/libft/ft_strjoin.c) |  |  |
 | [ft_strtrim](https://github.com/MarJC5/Libft/blob/main/libft/ft_strtrim.c) |  |  |
