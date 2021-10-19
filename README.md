@@ -30,9 +30,9 @@
 | [ft_strnstr](https://github.com/MarJC5/Libft/blob/main/libft/ft_strnstr.c) | ```char  *ft_strnstr(const  char  *big, const  char  *little, size_t  len);``` |  |
 | [ft_atoi](https://github.com/MarJC5/Libft/blob/main/libft/ft_atoi.c) | ```int  ft_atoi(const  char  *str);``` | Converts the string pointed to by ```str``` to ```int``` |
 | [ft_calloc](https://github.com/MarJC5/Libft/blob/main/libft/ft_calloc.c) | ```void  *ft_calloc(size_t  ecount, size_t  esize);``` | Allocates a block of memory for an array of num elements, each of them size bytes long, and initializes all its bits to zero |
-| [ft_strdup](https://github.com/MarJC5/Libft/blob/main/libft/ft_strdup.c) | ```char  *ft_strdup(const  char  *str);``` | Duplicate a string a dynamic memory using malloc |
-| [ft_substr](https://github.com/MarJC5/Libft/blob/main/libft/ft_substr.c) |  |  |
-| [ft_strjoin](https://github.com/MarJC5/Libft/blob/main/libft/ft_strjoin.c) | ```char	*ft_strjoin(char const *s1, char const *s2);``` |  |
+| [ft_strdup](https://github.com/MarJC5/Libft/blob/main/libft/ft_strdup.c) | ```char  *ft_strdup(const  char  *str);``` | Duplicate a string in a dynamic memory using malloc |
+| [ft_substr](https://github.com/MarJC5/Libft/blob/main/libft/ft_substr.c) | ```char	*ft_substr(const char *str, unsigned int start, size_t len);``` | Extracts a substring out of ```str``` and returns it  |
+| [ft_strjoin](https://github.com/MarJC5/Libft/blob/main/libft/ft_strjoin.c) | ```char	*ft_strjoin(char const *s1, char const *s2);``` | Combines strings to a string in a dynamic memory using malloc |
 | [ft_strtrim](https://github.com/MarJC5/Libft/blob/main/libft/ft_strtrim.c) |  |  |
 | [ft_split](https://github.com/MarJC5/Libft/blob/main/libft/ft_split.c) |  |  |
 | [ft_itoa](https://github.com/MarJC5/Libft/blob/main/libft/ft_itoa.c) | ```char  *ft_itoa(int  n);``` | Converts the ```int``` to a string ```char *``` |
