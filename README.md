@@ -1,4 +1,7 @@
-# Libft
+<h1 align="center">
+    <img alt="42Lausanne" title="42Lausanne" src="https://github.com/MarJC5/42Piscine/blob/main/doc/norminette/42_logo.svg" width="140"> </br>
+    Libft
+</h1>
 42 Libft for all ``.c`` projects
 
 
