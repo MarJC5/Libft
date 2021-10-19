@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 21:30:49 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 22:27:31 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/19 23:13:16 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ void	ft_bzero(void *buf, size_t n);
 
 char	*ft_itoa(int n);
 
+char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *str);

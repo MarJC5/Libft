@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 14:34:15 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/19 23:24:19 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -309,6 +309,25 @@ int main(void)
 	printf("ft_strjoin= %s", buffer);
 	free(buffer);
 	return 0;
+} */
+
+char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));
+/*
+#include <stdio.h>
+
+char f(unsigned int i, char c)
+{
+	char str;
+	str = c + i;
+	return (str);
+}
+
+int main(void)
+{
+	char str1[] = "abcde";
+	char* str2;
+	str2 = ft_strmapi(str1, f);
+	printf("%s\n", str2);
 } */
 
 void	ft_putstr_fd(char *str, int fd);
