@@ -1,5 +1,7 @@
 libftTester/
 libft-unit-test/
 libft/*.o
+libft/*.a
+libft/*.out
 .DS_Store
 .vscode
