@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 21:30:49 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 11:05:14 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/19 22:27:31 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
+void	ft_striteri(char *str, void (*f)(unsigned int, char*));
+
 void	*ft_calloc(size_t ecount, size_t esize);
 
 void	*ft_memchr(const void *str, int c, size_t n);
@@ -48,10 +50,12 @@ void	ft_bzero(void *buf, size_t n);
 char	*ft_itoa(int n);
 
 char	*ft_substr(const char *str, unsigned int start, size_t len);
-char	*ft_strnstr(const char *big, const char *little, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *str);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strchr(const char *str, int c);
+char	*ft_strjoin(char const *s1, char const *s2);
+/*char	*ft_strtrim(char const *s1, char const *set);*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t n);

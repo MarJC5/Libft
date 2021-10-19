@@ -1,28 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 18:17:20 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 18:17:22 by jmartin          ###   ########.fr       */
+/*   Created: 2021/10/19 13:57:13 by jmartin           #+#    #+#             */
+/*   Updated: 2021/10/19 17:56:28 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *str, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	char	*s;
+	int		prefix;
+	int		suffix;
+	int		full;
+	char	*str;
 
-	i = -1;
-	s = (char *)malloc((len + 1) * sizeof(char));
-	if (!s || !str)
+	prefix = ft_strlen(s1);
+	suffix = ft_strlen(s2);
+	full = prefix + suffix;
+	str = (char *)malloc((prefix + suffix + 1) * sizeof(char));
+	if (!s1 || !s2)
 		return (NULL);
-	while (++i < len && start < ft_strlen(str))
-		s[i] = str[start++];
-	s[i] = '\0';
-	return (s);
+	if (!str)
+		return (NULL);
+	if (s1 && s2)
+	{
+		ft_memcpy(str, s1, prefix);
+		ft_memcpy(str + prefix, s2, suffix);
+	}
+	str[full] = '\0';
+	return((char *)str);
 }

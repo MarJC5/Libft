@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/18 16:24:55 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/19 14:34:15 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -293,6 +293,21 @@ int main(void)
 	printf("%s\n", p);
 	free(p);
 
+	return 0;
+} */
+
+char	*ft_strjoin(char const *s1, char const *s2);
+
+/*
+#include <string.h>
+#include <stdio.h>
+
+int main(void)
+{
+	char *buffer;
+	buffer = ft_strjoin("test1", "test2");
+	printf("ft_strjoin= %s", buffer);
+	free(buffer);
 	return 0;
 } */
 
