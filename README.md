@@ -36,7 +36,7 @@
 | [ft_strtrim](https://github.com/MarJC5/Libft/blob/main/libft/ft_strtrim.c) |  |  |
 | [ft_split](https://github.com/MarJC5/Libft/blob/main/libft/ft_split.c) |  |  |
 | [ft_itoa](https://github.com/MarJC5/Libft/blob/main/libft/ft_itoa.c) | ```char  *ft_itoa(int  n);``` | Converts the ```int``` to a string ```char *``` |
-| [ft_strmapi](https://github.com/MarJC5/Libft/blob/main/libft/ft_strmapi.c) |  |  |
+| [ft_strmapi](https://github.com/MarJC5/Libft/blob/main/libft/ft_strmapi.c) | ```char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));``` | Applies the ```function f``` to each character of the string s to create a new string (with malloc()) resulting from successive applications of ```f``` |
 | [ft_striteri](https://github.com/MarJC5/Libft/blob/main/libft/ft_striteri.c) | ```void	ft_striteri(char *str, void (*f)(unsigned int, char*));``` | Applies the function f to each character of the string passed as argument |
 | [ft_putchar_fd](https://github.com/MarJC5/Libft/blob/main/libft/ft_putchar_fd.c) | ```void  ft_putchar_fd(char  c, int  fd);``` | Writes the character ```c``` on the file descriptor given |
 | [ft_putstr_fd](https://github.com/MarJC5/Libft/blob/main/libft/ft_putstr_fd.c) | ```void	ft_putstr_fd(char *str, int fd);``` | Writes the string ```str``` on the file descriptor given |
