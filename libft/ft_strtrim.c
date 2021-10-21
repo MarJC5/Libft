@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: jmartin <jmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/11 16:49:01 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/21 11:53:56 by jmartin          ###   ########.fr       */
+/*   Created: 2021/10/21 12:45:24 by jmartin           #+#    #+#             */
+/*   Updated: 2021/10/21 13:33:52 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	c;
+static	int	
 
-	c = 0;
-	while (*(str + c))
-		c++;
-	return (c);
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	start;
+	size_t	end;
+
+	while (/* condition */)
+	{
+		/* code */
+	}
+	
 }

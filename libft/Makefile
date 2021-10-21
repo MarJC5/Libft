@@ -6,7 +6,7 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/19 22:56:21 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/21 12:46:19 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ FILES		= 	ft_atoi.c \
 				ft_substr.c \
 				ft_strjoin.c \
 				ft_itoa.c \
+				ft_strtrim.c \
 				ft_strmapi.c \
 				ft_striteri.c \
 				ft_putchar_fd.c \
