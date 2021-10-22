@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 12:00:44 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 11:04:52 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/22 12:03:48 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,11 @@ char	*ft_itoa(int n)
 
 	i = 0;
 	sign = 0;
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	str = malloc((ft_numiterate(n) + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
 	if (n == 0)
 		str[i++] = '0';
 	if (n < 0 && sign++ == 0)

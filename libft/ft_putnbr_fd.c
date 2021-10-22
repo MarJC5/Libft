@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 11:53:46 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 11:06:12 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/22 11:40:04 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_putnbr_fd(int n, int fd)
 		n *= -1;
 		ft_putnbr_fd(n, fd);
 	}
-	else if (n > 10)
+	else if (n >= 10)
 	{
 		ft_putnbr_fd(n / 10, fd);
 		ft_putnbr_fd(n % 10, fd);
