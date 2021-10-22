@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 21:30:49 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/21 12:46:32 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/22 12:53:22 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ char	*ft_strrchr(const char *str, int c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *str, char c);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t n);

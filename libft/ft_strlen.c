@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 16:49:01 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/21 11:53:56 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/22 14:53:20 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t	c;
+	size_t	i;
 
-	c = 0;
-	while (*(str + c))
-		c++;
-	return (c);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

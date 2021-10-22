@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 15:54:44 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/21 10:45:48 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/22 14:55:31 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t n)
 	else if (n > dst_len)
 	{
 		while (i_src < src_len && i_dst < (n - 1))
-			*(dst + i_dst++) = *(src + i_src++);
-		*(dst + i_dst) = '\0';
+			dst[i_dst++] = src[i_src++];
+		dst[i_dst] = '\0';
 	}
 	return (dst_len + src_len);
 }
