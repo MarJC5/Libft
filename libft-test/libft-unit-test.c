@@ -6,11 +6,11 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/25 00:44:04 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/25 00:46:40 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t  ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 /*
 #include <stdio.h>
 #include <string.h>
@@ -80,7 +80,7 @@ int main (void)
 	return 0;
 } */
 
-void    *ft_memset(void *buf, int c, size_t n);
+void	*ft_memset(void *buf, int c, size_t n);
 /*
 #include <stdio.h>
 #include <string.h>
@@ -99,7 +99,7 @@ int main(void)
     return 0;
 } */
 
-void *ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 /*
 #include <stdio.h>
@@ -155,7 +155,7 @@ int main(void)
 	return(0);
 } */
 
-void    ft_bzero(void *buf, size_t n);
+void	ft_bzero(void *buf, size_t n);
 /*
 #include <stdio.h>
 #include <strings.h>
