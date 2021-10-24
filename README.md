@@ -33,8 +33,8 @@
 | [ft_strdup](https://github.com/MarJC5/Libft/blob/main/libft/ft_strdup.c) | ```char  *ft_strdup(const  char  *str);``` | Duplicate a string in a dynamic memory using malloc |
 | [ft_substr](https://github.com/MarJC5/Libft/blob/main/libft/ft_substr.c) | ```char	*ft_substr(const char *str, unsigned int start, size_t len);``` | Extracts a substring out of ```str``` and returns it  |
 | [ft_strjoin](https://github.com/MarJC5/Libft/blob/main/libft/ft_strjoin.c) | ```char	*ft_strjoin(char const *s1, char const *s2);``` | Combines strings to a string in a dynamic memory using malloc |
-| [ft_strtrim](https://github.com/MarJC5/Libft/blob/main/libft/ft_strtrim.c) |  |  |
-| [ft_split](https://github.com/MarJC5/Libft/blob/main/libft/ft_split.c) |  |  |
+| [ft_strtrim](https://github.com/MarJC5/Libft/blob/main/libft/ft_strtrim.c) | ```char	*ft_strtrim(char const *s1, char const *set)``` | Removes all ```set``` characters from the beginning and the end of a string |
+| [ft_split](https://github.com/MarJC5/Libft/blob/main/libft/ft_split.c) | ```char	**ft_split(char const *str, char c);``` | Splits a string into a series of tokens based on a particular delimiter |
 | [ft_itoa](https://github.com/MarJC5/Libft/blob/main/libft/ft_itoa.c) | ```char  *ft_itoa(int  n);``` | Converts the ```int``` to a string ```char *``` |
 | [ft_strmapi](https://github.com/MarJC5/Libft/blob/main/libft/ft_strmapi.c) | ```char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));``` | Applies the ```function f``` to each character of the string s to create a new string (with malloc()) resulting from successive applications of ```f``` |
 | [ft_striteri](https://github.com/MarJC5/Libft/blob/main/libft/ft_striteri.c) | ```void	ft_striteri(char *str, void (*f)(unsigned int, char*));``` | Applies the function f to each character of the string passed as argument |
