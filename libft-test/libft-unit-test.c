@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 23:18:59 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/19 23:38:28 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/25 00:44:04 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -232,53 +232,6 @@ int main (void) {
 	return(0);
 } */
 
-char	*ft_itoa(int n);
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-
-	printf("%s\n", ft_itoa(0));
-	printf("%s\n", ft_itoa(-125));
-	printf("%s\n", ft_itoa(58125));
-	printf("%s\n", ft_itoa(-2147483648));
-	return (0);
-} */
-
-int	ft_atoi(const char *str);
-/*
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-int main () {
-	// This function returns the converted integral number as an int value. If no valid conversion could be performed, it returns zero.
-
-   int val;
-   char str[20];
-
-   //strcpy(str, " \f\n\r\t\v98993489");
-   //strcpy(str, "-98993489");
-   strcpy(str, "98993489");
-   val = ft_atoi(str);
-   printf("\nft_atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
-
-   val = atoi(str);
-   printf("atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
-
-   printf("===========================================\n");
-
-   strcpy(str, "Hello");
-   val = ft_atoi(str);
-   printf("\nft_atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
-
-   val = atoi(str);
-   printf("atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
-
-   return(0);
-} */
-
 char	*ft_substr(const char *str, unsigned int start, size_t len);
 
 /*
@@ -330,6 +283,94 @@ int main(void)
 	printf("%s\n", str2);
 } */
 
+void	ft_striteri(char *str, void (*f)(unsigned int, char*));
+/*
+#include <stdio.h>
+
+void	f(unsigned int i, char *s)
+{
+	s[i] += 2;
+}
+
+int	main(void)
+{
+	char str1[] = "abcde";
+	ft_striteri(str1, f);
+	printf("%s\n", str1);
+} */
+
+char	**ft_split(char const *str, char c);
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char str[] = " iterate character by character, looking for your delimiter ";
+    char **test = ft_split(str, ' ');
+
+    for (int i = 0; i < ft_words_count(str, ' '); i++)
+        printf("%s\n", test[i]);
+    return (0);
+} */
+
+int	ft_atoi(const char *str);
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int	main(void)
+{
+	// This function returns the converted integral number as an int value. If no valid conversion could be performed, it returns zero.
+
+   int val;
+   char str[20];
+
+   //strcpy(str, " \f\n\r\t\v98993489");
+   //strcpy(str, "-98993489");
+   strcpy(str, "98993489");
+   val = ft_atoi(str);
+   printf("\nft_atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
+
+   val = atoi(str);
+   printf("atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
+
+   printf("===========================================\n");
+
+   strcpy(str, "Hello");
+   val = ft_atoi(str);
+   printf("\nft_atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
+
+   val = atoi(str);
+   printf("atoi()\n------\nvalue = %s, Int value = %d\n\n", str, val);
+
+   return(0);
+} */
+
+char	*ft_itoa(int n);
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("ft_itoa():\n=======================\n");
+	printf("%s\n", ft_itoa(0));
+	printf("%s\n", ft_itoa(-125));
+	printf("%s\n", ft_itoa(58125));
+	printf("%s\n", ft_itoa(-2147483648));
+	return (0);
+} */
+
+void	ft_putchar_fd(char c, int fd);
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	ft_putchar_fd('c', 1);
+	return(0);
+} */
+
 void	ft_putstr_fd(char *str, int fd);
 /*
 #include <stdio.h>
@@ -338,5 +379,25 @@ int	main(void)
 {
 	ft_putstr_fd("This is c programming.", 1);
 	ft_putstr_fd("This is a system programming language.", 1);
+	return(0);
+} */
+
+void	ft_putendl_fd(char *str, int fd);
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	ft_putendl_fd("This is c programming.", 1);
+	return(0);
+} */
+
+void	ft_putnbr_fd(int n, int fd);
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	ft_putnbr_fd(12345, 1);
 	return(0);
 } */

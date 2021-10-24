@@ -6,47 +6,69 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 12:11:20 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/22 17:44:00 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/25 00:32:40 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_words_count(char const *str, char delimiter)
+static void	*ft_free_all(char **bigtab, int i)
 {
-	int		i;
-	int		words;
+	while (i--)
+		free(bigtab[i]);
+	free(bigtab);
+	return (NULL);
+}
 
-	words = 0;
+static int	ft_words_count(char const *str, char c)
+{
+	int i;
+	int words;
+
 	i = 0;
-	if (str[i] == '\0' || ((str[0] == delimiter ) && (str[i + 1] == '\0')))
+	words = 0;
+	if (str[i] == c || str[i] == '\0')
 		words--;
-	while (str[i++])
+	while (str[i])
 	{
-		if (str[i] == delimiter)
+		if (str[i] == c && str[i + 1] != c && str[i + 1] != '\0')
 			words++;
+		i++;
 	}
 	return (words + 1);
 }
 
-char	**ft_split(char const *str, char c)
+static int	ft_word_len(const char *str, char c)
 {
-	(void)str;
-	(void)c;
-	return (NULL);
+	int i;
+
+	i = 0;
+	while (str[i] && str[i] != c)
+		i++;
+	return (i);
 }
 
-#include <stdio.h>
-
-int main(void)
+char	**ft_split(char const *str, char c)
 {
-	char str[] = "iterate character by character, looking for your delimiter";
-	char str2[] = " delimiter delimiter";
-	char str3[] = " ";
-	char str4[] = "";
-	printf("%d\n", ft_words_count(str, ' '));
-	printf("%d\n", ft_words_count(str2, ' '));
-	printf("%d\n", ft_words_count(str3, ' '));
-	printf("%d\n", ft_words_count(str4, ' '));
-	return (0);
+	int i;
+	int wlen;
+	char **bigtab;
+
+	i = 0;
+	wlen = ft_words_count(str, c);
+	bigtab = malloc((wlen + 1) * sizeof(char *));
+	if (!bigtab)
+		return (NULL);
+	while (i < wlen)
+	{
+		while (*str == c && *str)
+			str++;
+		bigtab[i] = ft_substr(str, 0, ft_word_len(str, c));
+		if (bigtab[i] == NULL)
+			return (ft_free_all(bigtab, i));
+		str += ft_word_len(str, c);
+		i++;
+	}
+	bigtab[i] = NULL;
+	return (bigtab);
 }
