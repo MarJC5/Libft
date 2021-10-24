@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 12:11:20 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/25 00:32:40 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/25 01:23:39 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ static void	*ft_free_all(char **bigtab, int i)
 
 static int	ft_words_count(char const *str, char c)
 {
-	int i;
-	int words;
+	int	i;
+	int	words;
 
 	i = 0;
 	words = 0;
@@ -40,7 +40,7 @@ static int	ft_words_count(char const *str, char c)
 
 static int	ft_word_len(const char *str, char c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] && str[i] != c)
@@ -50,9 +50,9 @@ static int	ft_word_len(const char *str, char c)
 
 char	**ft_split(char const *str, char c)
 {
-	int i;
-	int wlen;
-	char **bigtab;
+	int		i;
+	int		wlen;
+	char	**bigtab;
 
 	i = 0;
 	wlen = ft_words_count(str, c);
