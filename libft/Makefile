@@ -6,7 +6,7 @@
 #    By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/12 18:11:28 by jmartin           #+#    #+#              #
-#    Updated: 2021/10/22 12:53:34 by jmartin          ###   ########.fr        #
+#    Updated: 2021/10/25 07:39:04 by jmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,20 +55,23 @@ FILES		= 	ft_atoi.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c
 OBJ			= 	$(FILES:.c=.o) # Any file ending in .o depends on the same filename ending in .c to be present.
-
-.PHONY : all clean fclean re
+#BONUSFILES	=	ft_lstnew.c
+#BONUSOBJ	= 	$(BONUSFILES:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): #bonus
+	@$(CC) $(CFLAGS) $(FILES)
 	@$(AR) $(NAME) $(OBJ)
 	@echo "[$(GREEN)created$(RESET)]: *.o files & $(NAME)"
 
-$(OBJ): $(FILES)
-	@$(CC) $(CFLAGS) $(FILES)
+#bonus:
+#	@$(CC) $(CFLAGS) $(BONUSFILES)
+#	@echo "[$(GREEN)created$(RESET)]: bonus *.o files"
 
 clean:
 	@$(RM) $(OBJ)
+	@$(RM) $(BONUSOBJ)
 	@echo "[$(RED)deleted$(RESET)]: *.o files"
 
 # Call previous rule to delete .o and clean program too
@@ -77,3 +80,7 @@ fclean: clean
 	@echo "[$(RED)deleted$(RESET)]: $(NAME)"
 
 re: fclean all
+
+# I use to make sure that gnu make will still run even if files called
+# clean / fclean / all and re already exist in the directory
+.PHONY : all clean fclean re #bonus

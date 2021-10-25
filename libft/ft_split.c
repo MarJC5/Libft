@@ -6,7 +6,7 @@
 /*   By: jmartin <jmartin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 12:11:20 by jmartin           #+#    #+#             */
-/*   Updated: 2021/10/25 01:23:39 by jmartin          ###   ########.fr       */
+/*   Updated: 2021/10/25 07:42:45 by jmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ char	**ft_split(char const *str, char c)
 	char	**bigtab;
 
 	i = 0;
+	if (!str)
+		return (NULL);
 	wlen = ft_words_count(str, c);
 	bigtab = malloc((wlen + 1) * sizeof(char *));
 	if (!bigtab)
